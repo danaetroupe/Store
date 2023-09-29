@@ -132,7 +132,7 @@
     <ClInclude Include="Store.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Store.cpp" />
   </ItemGroup>
