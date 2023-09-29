@@ -4,6 +4,12 @@ using namespace std;
 
 Store::Store() {}
 
+Store::~Store() {
+    for (auto& i : inventory) {
+        delete i.second;
+    }
+}
+
 void Store::addItem(string name, float price, int quantity)
 {
     Item* item = new Item;

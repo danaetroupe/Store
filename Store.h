@@ -13,6 +13,7 @@ class Store
 {
 public:
 	Store();
+	~Store();
 	
 	void addItem(string name, float price, int quantity);
 	bool buyItem(Person* person, string itemName);
