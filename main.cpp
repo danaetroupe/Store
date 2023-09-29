@@ -12,12 +12,14 @@ int main() {
 	store.addItem("Wood", 27.32, 2);
 
 	store.showInventory();
-	
-	cout << "What would you like to buy?" << endl;
-	string name;
-	cin >> name;
-	store.buyItem(person, name);
-	
-	cin >> name;
+
+	string input = "";
+	while (input != "QUIT") {
+		cout << "What would you like to buy? (or enter 'QUIT')" << endl;
+		string name;
+		cin >> name;
+		store.buyItem(person, name);
+	}
+
 	return 0;
 }

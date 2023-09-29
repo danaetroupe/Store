@@ -19,6 +19,6 @@ public:
 	void showInventory();
 
 private:
-	map<string, Item> inventory;
+	map<string, Item*> inventory;
 };
 
